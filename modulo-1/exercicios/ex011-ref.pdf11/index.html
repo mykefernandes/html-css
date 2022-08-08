@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas, Áudio e Vídeo.</h1>
+    <h2>Imagens Dinâmicas</h2>
+
+    <picture>
+        <!--Por padrão o <source media-type> vem com o width em min. No exemplo foi feito usando o max mas fica a critério-->
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="Imagens/img-g.png" alt="A imagem flexível funciona">
+        <p>Infelizmente seu navegador não suporta aúdio</p>
+    </picture>
+   
+   <h2>Aprendendo a utilizar áudio em HTML5</h2>
+   <!--<audio src="midia/tellmethatican't-neffex.mp3" controls autoplay></audio>-->
+   
+   <audio controls autoplay>
+       <source src="midia/tellmethatican't-neffex.mp3" type="audio/mpeg">
+   </audio>
+   <!--a partir da versão .66 do google chrome o recurso de autoplay foi bloqueado, só começando a executar a partir da vontade do usuário. Quanto ao Firefox e Edge é possível configurar pelo browser para que toque automaticamente, bloqueie ou limite o autoplay.-->
+    
+</body>
+</html>
